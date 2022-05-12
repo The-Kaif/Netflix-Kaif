@@ -17,7 +17,7 @@ function Row({ title, fetchURL, isLargeRow = false }) {
             setMovies(request.data.results);
             return request;
         }
-
+//Row page
         fetchData();
     }, [fetchURL]);
 
