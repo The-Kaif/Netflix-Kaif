@@ -13,7 +13,7 @@ function HomeScreen() {
             <Banner />
 
             <Row
-                title="NETFLIX ORIGINALS"
+                title="NEOFLIX ORIGINALS"
                 fetchURL={requests.fetchNetflixOriginals}
                 isLargeRow
             />

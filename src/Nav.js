@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
 import "./Nav.css";
+import movie from './screens/movie';
 
 function Nav() {
 const [show, handleShow] = useState(false);
@@ -13,6 +14,11 @@ const transitionNavBar = () => {
         handleShow(false);
     }
 }
+// Adding New Movies From Yt
+
+
+
+
 
 useEffect(() => {
     window.addEventListener("scroll",transitionNavBar);
@@ -25,14 +31,20 @@ useEffect(() => {
             <img 
             onClick={() => history.push("/")}
             className="nav__logo"
-            src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt=""/>
+            src="neoflix.png" alt=""/>
 
             <img
             onClick={() => history.push("/profile")}
             className="nav__avatar"
             src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt=""/>
+        </div>
 
-            </div>
+        <div className='Movies'>
+            <button path=""className='yt-movie'>Movie</button>
+           
+        </div>
+
+
         </div>
     );
 }

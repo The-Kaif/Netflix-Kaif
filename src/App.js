@@ -8,13 +8,19 @@ import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from './features/userSlice';
 import ProfileScreen from './screens/ProfileScreen';
+
+//import movie from './screens/movie';
+
+//import Footer from './components/Footer';
+
+
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
 
   <Helmet>
     <meta charSet="utf-8" />
-    <title>Netflix-Kaif</title>
+    <title>Neoflix</title>
     <link rel="canonical" href="http://mysite.com/example" />
     <meta name="description" content="Helmet application" />
   </Helmet>
@@ -38,7 +44,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="app">
+    <><div className="app">
       <Router>
         {!user ? (
           <LoginScreen />
@@ -53,8 +59,13 @@ function App() {
           </Switch>
         )}
       </Router>
+
     </div>
+    </>
   );
+
+
+  
 }
 
 export default App;

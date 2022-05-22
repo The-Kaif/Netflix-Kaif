@@ -11,13 +11,28 @@
     transition: all 0.5s;
 }
 
+/* Movies style*/
+.yt-movie{
+    position: fixed;
+    top:10px;
+    left: 10;
+    color: white;
+    background-color: Transparent;
+    border: none;
+    width: 80px;
+    object-fit: contain;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+
 .nav__contents{
     display: flex;
     justify-content: space-between;
 }
 
 .nav__black{
-    background-color: #111;
+    background-color:#0f171e;
 }
 
 .nav__logo{
