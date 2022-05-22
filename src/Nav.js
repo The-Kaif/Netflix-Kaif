@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router';
 import "./Nav.css";
-import movie from './screens/movie';
+
+import { Link } 
+       from "react-router-dom";
 
 function Nav() {
 const [show, handleShow] = useState(false);
@@ -40,7 +42,11 @@ useEffect(() => {
         </div>
 
         <div className='Movies'>
-            <button path=""className='yt-movie'>Movie</button>
+            {/* <button path=""className='yt-movie'><h2>Movie</h2></button> */}
+            <Link className='yt-movie' to="/movie">
+              <h3>Movie</h3>
+            </Link>
+            
            
         </div>
 

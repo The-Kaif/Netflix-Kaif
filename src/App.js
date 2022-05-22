@@ -8,6 +8,7 @@ import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from './features/userSlice';
 import ProfileScreen from './screens/ProfileScreen';
+import Movie from './screens/movie';
 
 //import movie from './screens/movie';
 
@@ -55,6 +56,9 @@ function App() {
             </Route>
             <Route exact path="/">
               <HomeScreen />
+            </Route>
+            <Route path="/movie">
+              <Movie />
             </Route>
           </Switch>
         )}

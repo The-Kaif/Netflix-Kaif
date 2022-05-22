@@ -1,3 +1,40 @@
-h1{
-    background-color: aqua;
+body{
+    background-color: #0f171e;
+}
+.logo{
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 80px;
+    object-fit: contain;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.list{
+
+    background-color: #0f171e;
+    color: white;
+    
+}
+.list > h1{
+    cursor: pointer;
+    position: fixed;
+    margin-left: 92%;
+}
+.khatta-meetha{
+    background-color: #0f171e;
+    color: white;
+}
+.khatta-meetha > h2{
+    padding-top: 60px;
+    margin-left: 18%;
+}
+
+.moviebanner{
+    margin-left: 18%;
+    
+}
+
+.font-size{
+    font-size: 24px;
 }
